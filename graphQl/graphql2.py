@@ -15,11 +15,8 @@ class Query(graphene.ObjectType):
 
     def resolve_users(self, info):
         return [
-            User(username='Ghassan', gender = "M", last_login=datetime.now()),
-            User(username='Abdollah', gender = "M", last_login=datetime.now()),
-            User(username='Sham', gender = "M", last_login=datetime.now()),
-            User(username='Hassan', gender = "M", last_login=datetime.now()),
-            User(username='Inas', gender = "M", last_login=datetime.now()),
+            User(username='name', gender = "M", last_login=datetime.now()),
+
         ]
     
 schema = graphene.Schema(query=Query)
